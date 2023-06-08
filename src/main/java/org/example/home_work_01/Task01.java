@@ -2,14 +2,17 @@ package org.example.home_work_01;
 import java.util.Random;
 
 public class Task01 {
+    // 1. Выбросить случайное целое число в диапазоне от 0 до 2000 и сохранить в i
     int getRandom(int bound, int start) {
         return new Random().nextInt(bound + 1 - start) - start;
     }
 
+    //  2. Посчитать и сохранить в n номер старшего значащего бита выпавшего числа
     int fingMSB(int n) {
         return Integer.toBinaryString(n).length();
     }
 
+    // 3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
     int[] multiplesOfN(int min, int max, int dev) {
         int count1 = 0;
         for (int j = min; j <= max; j++) {
@@ -29,6 +32,7 @@ public class Task01 {
         return array;
     }
 
+    // 4. Найти все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранить в массив m2
     int[] notMultyplesOfN(int min, int max, int dev) {
         int count2 = 0;
         for (int j = min; j <= max; j++) {

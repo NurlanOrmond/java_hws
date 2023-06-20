@@ -26,7 +26,7 @@ public class Task01 {
         }
         return sorted;
     }
-
+    // Сортирую сразу по полу и возрасту:
     public static ArrayList <String> sortedBySex (ArrayList<String> str, String sex) {
         ArrayList<String> sorted = new ArrayList<>();
         for (int i = 0; i < str.size(); i++) {
